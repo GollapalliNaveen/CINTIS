@@ -1,0 +1,101 @@
+
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url("pexels-padrinan-19670.jpg");
+    backdrop-filter: blur(10px);
+    background-size: 100%;
+}
+h2{
+  color: yellow;
+  text-shadow: 2px 2px 5px #000;
+  -webkit-text-stroke: 0.1px;
+}
+
+header {
+    background: rgb(76, 76, 197);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.slideshow-container {
+  border-color: black ;
+  border-width: 15px ;
+  border-radius: 10px ;
+
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+.a:hover{
+  transform: scale(1.5);
+}
+header nav ul li a {
+    color:#fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 4s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
